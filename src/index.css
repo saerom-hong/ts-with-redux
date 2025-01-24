@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+@theme {
+  --font-display: 'DM Mono', 'sans-serif';
+}
+@plugin "daisyui" {
+  themes: halloween --default, acid --prefersdark;
+}
