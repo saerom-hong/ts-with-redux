@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+# ts-with-redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple React application using TypeScript and Redux. I followed Stephan Grider's React and TypeScript Course on Udemy(https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/) and added an extra CSS by myself. 
 
-## Available Scripts
+ <br />
+ 
+## 🪄 Users can
+
+- search certain npm packages by keyword
+- change the theme of the application
+
+<br />
+
+## 📽 Project Overview
+![Search for a package (1)](https://github.com/user-attachments/assets/5f1cd071-45fb-4cfe-99ae-ad529fa72586)
+
+<br />
+
+## What I learned from this project...
+
+✅ **My first time using Redux**: Redux is a state management library often used with JavaScript applications to manage the application's global state in a predictable way.
+Here's a brief overview of how it works:
+1. **Store**: The central place where the application's state lives. The store is a single source of truth, and any changes to the state must go through it.
+2. **Actions**:Plain JavaScript objects that describe what you want to do. They always have a `type` property (a string describing the action) and may include additional data (called payload).    
+3. **Reducers**: Pure functions that take the current state and an action as inputs and return a new state. Reducers specify how the state changes in response to an action.  
+4. **Dispatch**: The mechanism used to send actions to the store. When you *call* `dispatch(action)`, it triggers the reducers to process the action and update the state accordingly. 
+5. **Selectors**: Functions used to read specific pieces of state from the store, allowing components to access the data they need.
+
+This YouTube video explaining Redux in 100 Seconds(https://www.youtube.com/watch?v=_shA5Xwe8_4) is super helpful! 
+
+✅ **Also, first time using Tailwind CSS and daisyUI**: There are plenty of CSS frameworks out there; in TailwindCSS, instead of writing custom CSS classes and styles, you apply pre-designed utility classes directly to HTML elements. I installed it based on their documentation (https://tailwindcss.com/docs/installation/using-postcss) and applied a few CSS classes for display flex and width, etc. daisyUI, a library built on top of Tailwind CSS, provides pre-designed, responsive components like buttons, modals, and navbars. It is somewhat similar to MaterialUI when it comes to Pre-Built Components and allows customization of their components. Don't reinvent the wheel! 
+
+✅ **More Familiar with TypeScript**: I wanted to refresh my TS knowledge, and now getting more and more familiar with it! 
+
+<br />
+
+## 🤖 Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+```
+npm install 
+npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
